@@ -59,10 +59,18 @@ console.log("const variable.................")
 // can not be decared only should assign a value
 const d = 10;
 
+console.log(d)
 //d = 20 can not assign value
 
 // can not be declared in other scope also
-// {
-//     const d; 
-// }
+{
+    console.log(d)
+    //const d; 
+    const g = 78;
+    console.log(g)
+}
 
+//console.log(g) error can not be used other scope const variable
+
+g = 70
+console.log(g)
