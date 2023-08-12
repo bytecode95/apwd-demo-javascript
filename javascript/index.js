@@ -9,6 +9,10 @@ console.log("external java script");
 
 var name = "Chethana" // Global variable - outside of the scope
 
+Check()
 function Check(){
-    var name = "Virajini"  // Locak variable - within scope
+    var name = "Virajini"  // Local variable - within scope
+    document.write(name)
 }
+
+document.write(name);
