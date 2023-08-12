@@ -44,3 +44,8 @@ document.write("a <= b: ");
 result = a <= b;
 document.write(result);
 document.write(line, line)
+
+
+var text = null;
+console.log(text);
+console.log(text==null);
