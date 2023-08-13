@@ -1,4 +1,4 @@
-console.log("run page")
+console.log("run page2")
 var a = 12;
 var b =10;
 var line = "<br/>"
