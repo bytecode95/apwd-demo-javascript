@@ -131,6 +131,12 @@ switch(marks){
         console.log("Grade : C");
         break;   
     default:
-        console.log("Fail")    
+        console.log("Fail")
+}
 
+console.log("For Loop..................")
+// For Loops - for loop is running until condition is true
+
+for(let i = 0; i < 10; i++){
+    console.log(i);
 }

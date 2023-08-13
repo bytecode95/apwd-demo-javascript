@@ -47,6 +47,22 @@
 
     </script>
     <h3>JavaScript</h3>
+
+    <h2>For Loops</h2>
+    <div>BMW</div>
+    <div>Volvo</div>
+    <div>Ford</div>
+
+
+    <div id="demo"></div>
+    <script type="text/javascript">
+        const car = ["BMW", "Volvo", "Ford"];
+        let text = "";
+        for(let i =0; i < car.length; i++){
+            text += car[i] + "<br/>";
+        }
+        document.getElementById("demo").innerHTML = text
+    </script>
     
     
 </body>
