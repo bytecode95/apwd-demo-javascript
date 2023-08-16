@@ -182,3 +182,12 @@ for(let a in acpt){
     console.log(a);
 }
 
+console.log("while loop..................")
+//While loop - unknown no of iterations
+
+let n = 0;
+while(n < 5){
+    console.log(n);
+    n++;
+}
+
