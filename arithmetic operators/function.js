@@ -191,3 +191,13 @@ while(n < 5){
     n++;
 }
 
+console.log("Do while loop..................")
+// Do while - code block run first and the check the condition
+let o = 0;
+do{
+    o++
+    console.log(o)
+}
+
+while(o<5)
+
