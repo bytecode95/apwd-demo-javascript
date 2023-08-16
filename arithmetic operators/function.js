@@ -140,3 +140,10 @@ console.log("For Loop..................")
 for(let i = 0; i < 10; i++){
     console.log(i);
 }
+
+let id = 0
+ for(let i = 0; i <=100; i++){
+     id += i
+
+ }
+console.log(id)
