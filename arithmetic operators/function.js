@@ -149,7 +149,7 @@ let id = 0
 console.log(id)
 
 console.log("for in..................")
-// For in
+// For in - gives the array index
 // child is an object
 const child = {name: "Kasun", age: 22, addres:"Panadura"}
 //console.log(child.name)
@@ -161,8 +161,24 @@ for(let x in child){
 }
 
 const car = ["BMW", "Volvo", "Ford"];
-console.log(car)
+console.log(car);
 
 for(let a in car){
-    console.log(car[a])
+    console.log(car[a]);
 }
+
+console.log("for of..................")
+//for of - give the array or string value
+for(let w of car){
+    console.log(w);
+}
+
+const acpt = "ACPT"
+for(let w of acpt){
+    console.log(w);
+}
+
+for(let a in acpt){
+    console.log(a);
+}
+
