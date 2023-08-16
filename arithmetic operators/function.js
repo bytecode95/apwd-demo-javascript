@@ -135,7 +135,7 @@ switch(marks){
 }
 
 console.log("For Loop..................")
-// For Loops - for loop is running until condition is true
+// For Loops - for loop is running until condition is true - known iteration
 
 for(let i = 0; i < 10; i++){
     console.log(i);
@@ -147,3 +147,22 @@ let id = 0
 
  }
 console.log(id)
+
+console.log("for in..................")
+// For in
+// child is an object
+const child = {name: "Kasun", age: 22, addres:"Panadura"}
+//console.log(child.name)
+
+
+let word = ""
+for(let x in child){
+    console.log(x + ": " + child[x])
+}
+
+const car = ["BMW", "Volvo", "Ford"];
+console.log(car)
+
+for(let a in car){
+    console.log(car[a])
+}
