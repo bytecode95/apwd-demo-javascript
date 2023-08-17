@@ -198,6 +198,12 @@ do{
     o++
     console.log(o)
 }
-
 while(o<5)
+
+console.log("break..................")
+//stop the code running after that
+for(let i = 0; i < 10; i ++){
+    if(i === 7){break;}
+    console.log('The number is: ', i)
+}
 
