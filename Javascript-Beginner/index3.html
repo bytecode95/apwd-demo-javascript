@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CardQuantity</title>
+</head>
+<body>
+    <h3>Card Quantity</h3>
+    <button onclick="console.log(`Card Quantity: ${cardQuantity}`);">
+        Show Quantity
+    </button>
+
+    <button onclick=" cardQuantity ++ ;
+                      console.log(`Card Quantity: ${cardQuantity}`);">
+        Add to Cart
+    </button>
+
+    <button onclick="cardQuantity += 2 ;
+            console.log(`Card Quantity: ${cardQuantity}`);">
+        +2
+    </button>
+
+
+    <button onclick="cardQuantity += 3 ;
+            console.log(`Card Quantity: ${cardQuantity}`);">
+        +3
+    </button>
+
+
+    <button onclick="cardQuantity = 0; console.log('cart was reset'); console.log(`Card Quantity: ${cardQuantity}`);" >
+        Reset cart
+    </button>
+
+    <script>
+        let cardQuantity = 0;
+    </script>
+</body>
+</html>
