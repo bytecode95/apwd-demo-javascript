@@ -200,7 +200,7 @@ do{
 }
 while(o<5)
 
-console.log("break..................")
+console.log(".............break...............")
 //stop the code running after that
 for(let i = 0; i < 10; i ++){
     if(i === 7){break;}
@@ -212,4 +212,12 @@ while(m<10){
     if(m===4){break;}
     console.log(m);
     m++
+}
+
+console.log("..........continue.............")
+//continue ekaa adla code eka run weneh nethuwa ilnga wataye idn aye run wenwa
+
+for(let i = 0; i < 10; i ++){
+    if(i === 5){continue;}
+    console.log('The number is: ', i)
 }
