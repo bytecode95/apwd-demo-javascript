@@ -207,3 +207,9 @@ for(let i = 0; i < 10; i ++){
     console.log('The number is: ', i)
 }
 
+let m = 0;
+while(m<10){
+    if(m===4){break;}
+    console.log(m);
+    m++
+}
