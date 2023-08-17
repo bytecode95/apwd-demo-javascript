@@ -22,3 +22,35 @@ cars[2] = "Volvo"
 cars[3] = "Ford"
 console.log(cars)
 
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits);
+// array length
+
+console.log(fruits.length);
+console.log(names.length);
+console.log(cars.length);
+
+// methods in array
+
+console.log("..............pop...............")
+// pop - remove final element in an array
+fruits.pop()
+console.log(fruits);
+console.log(fruits.length);
+
+
+console.log("..............push...............")
+//push - add value after the last index
+fruits.push("Mango");
+console.log(fruits);
+console.log(fruits.length);
+
+console.log("..............shift...............")
+//shift - remove first value of the array
+fruits.shift();
+console.log(fruits);
+
+console.log("..............unshift...............")
+//unshift - add value to first index
+fruits.unshift("banana");
+console.log(fruits);
