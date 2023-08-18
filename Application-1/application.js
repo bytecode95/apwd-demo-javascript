@@ -12,6 +12,9 @@ function onWindowLoad(){
                 <li class="list-group-item">Address ${details[i].address}:</li>
                 <li class="list-group-item">Phone Number ${details[i].number}:</li>
             </ul>
+            <div class="d-flex justify-content-center">
+                <button onclick="onDelete()" type="button" class="btn btn-danger mt-1 mb-1">Submit</button>
+            </div>
         </div>`
     }
 
@@ -19,10 +22,10 @@ function onWindowLoad(){
 }
 
 function onSubmit(){
-    const firstName = document.getElementById("fName").value;
-    const lastName = document.getElementById("lName").value;
-    const address = document.getElementById("address").value;
-    const number = document.getElementById("number").value;
+    let firstName = document.getElementById("fName").value;
+    let lastName = document.getElementById("lName").value;
+    let address = document.getElementById("address").value;
+    let number = document.getElementById("number").value;
 
     if(firstName!=="" && lastName!=="" && address!=="" && number!==""){
         details.push({
@@ -37,6 +40,7 @@ function onSubmit(){
         alert("Please fill all")
     }
 }
+console.log(details)
 
 
 function clearText(){
@@ -44,4 +48,10 @@ function clearText(){
    document.getElementById("lName").value = "";
    document.getElementById("address").value = "";
    document.getElementById("number").value = "";
+}
+
+function onDelete(){
+    details.shift()
+    console.log(details)
+    onWindowLoad();
 }
