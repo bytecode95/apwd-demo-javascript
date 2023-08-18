@@ -6,50 +6,54 @@
     <script type="text/javascript" src="event.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="load()"  >
-    <h2>Event handling</h2>
-    <img onload="load()" src="../assets/1691146208-APWD%20-%20Advanced%20Professional%20Web%20Developer.jpg" class="image" alt="img">
+<body onload="load()">
+<h2>Event handling</h2>
+<img onload="load()" src="../assets/1691146208-APWD%20-%20Advanced%20Professional%20Web%20Developer.jpg" class="image"
+     alt="img">
 
-    <br><br>
+<br><br>
 
-    <button class="all-event-btn">
-        Click me for event
-    </button>
+<button class="all-event-btn">
+    Click me for event
+</button>
 
-    <br><br>
+<br><br>
 
-    <button onclick="clickMe()"
-            onmouseover="mouseOver()"
-            onmouseout="mouseOut()"
-            class="btn-click" id="btn-1">
-        Click Me
-    </button>
-    <br><br>
-    <input
-            onkeydown="onkeyDown()"
-            onkeyup="onkeyUp()"
-            onkeypress="onKeypress()"
-            onchange="onChange()"
-            class="input"
-            type="text"
-            id="input-1"
-    >
+<button onclick="clickMe()"
+        onmouseover="mouseOver()"
+        onmouseout="mouseOut()"
+        class="btn-click" >
+    Click Me
+</button>
+<br><br>
+<input
+        onkeydown="onkeyDown()"
+        onkeyup="onkeyUp()"
+        onkeypress="onKeypress()"
+        onchange="onChange()"
+        class="input"
+        type="text"
+        id="input-1"
+>
 
-    <br><br>
+<br><br>
 
-    <input
-            onkeyup="onChangeText()"
-            class="input"
-            type="text"
-            id = "input-2"
+<input
+        onkeyup="onChangeText()"
+        class="input"
+        type="text"
+        id="input-2"
 
-    >
+>
 
-    <button
-            onclick="submit()"
-            class="btn-click" >
-        Submit
-    </button>
+<button
+        onclick="submit()"
+        onmouseover="onButtonChange()"
+        onmouseout="onButtonChangeout()"
+        class="btn-click"
+        id = "btn-1">
+    Submit
+</button>
 
 </body>
 </html>
