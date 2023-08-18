@@ -29,8 +29,7 @@ const finalAnswer = (a, b) => {
 
 //return function - return value can be used anywhere
 function returnValue(n1, n2){
-    const ans1 = n1 + n2;
-    return ans1
+    return ans1 = n1 + n2;
 }
 
 
