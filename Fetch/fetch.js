@@ -19,7 +19,10 @@ function loadScript(){
             },
         })
             .then((response) => response.json())
-            .then((json) => console.log(json));
+            .then((json) =>{
+                alert("Saved");
+                }
+            );
     })
 
 
