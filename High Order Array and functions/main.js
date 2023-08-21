@@ -104,3 +104,19 @@ const sortedAges = ages.sort(function(a,b){
 })
 
 console.log(sortedAges);
+
+console.log("...........reduce method.............")
+//reduce
+
+let ageSum = 0;
+for (let i = 0; i < ages.length; i++){
+    ageSum+= ages[i];
+}
+
+console.log(ageSum);
+
+const ageSum1 = ages.reduce(function(total, age){
+    return total + age;
+})
+
+console.log(ageSum1);
