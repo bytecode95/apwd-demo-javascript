@@ -66,3 +66,20 @@ console.log(Retails);
 const company80s = companies.filter(company => company.start> 1980 && company.start< 1990);
 console.log(company80s);
 
+console.log("...........Map method.............")
+//map
+
+//Create an array of company names
+const CompanyNames = companies.map(function(company){
+    return `${company.name} [${company.start}]`;
+})
+console.log(CompanyNames);
+
+const companyname = companies.map(company => company.name);
+console.log(companyname);
+
+//Two map
+const agemap = ages
+    .map(age => Math.sqrt(age))
+    .map(age => age*2);
+console.log(agemap);
