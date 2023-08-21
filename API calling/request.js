@@ -1,7 +1,7 @@
 console.log(".........XML HTTP request..........");
 
 const request1 = new XMLHttpRequest();
-request1.open("GET","https://jsonplaceholder.typicode.com/users");
+request1.open("GET","https://jsonplaceholder.typicode.com/users11");
 request1.send();
 request1.onload = ()=>{
     console.log(request1);
@@ -12,13 +12,13 @@ request1.onload = ()=>{
     }
 }
 
-// console.log(".........Fetch API..........");
-//
-// fetch('https://jsonplaceholder.typicode.com/users')
-//   .then(response=>{
-//       return response.json();
-// }).then(json=>{
-//     console.log(json);
-// })
-//
-// console.log(window);
+console.log(".........Fetch API..........");
+
+fetch('https://jsonplaceholder.typicode.com/users')
+  .then(response=>{
+      return response.json();
+}).then(json=>{
+    console.log(json);
+})
+
+console.log(window);
