@@ -14,12 +14,55 @@ const companies =[
 
 const ages = [33, 12, 20, 16, 5, 54, 21, 24, 44, 61, 13, 15, 45, 25, 64, 32];
 
+console.log("...........ForLoop.............")
 //standard for loop
 for(let i=0; i < companies.length; i++){
     console.log(companies[i]);
 }
 
+console.log("...........ForEach.............")
 //ForEach
 companies.forEach(function (company, index,array) {
     console.log(company);
 })
+
+
+console.log("...........ForLoops before filter method.............")
+//filter
+
+for(let i = 0; i < ages.length; i++){
+    if (ages[i]>=21){
+        console.log(ages[i]);
+    }
+}
+
+let canDrink = [];
+for(let i = 0; i < ages.length; i++){
+    if (ages[i]>=21){
+        canDrink.push(ages[i]);
+    }
+}
+console.log(canDrink);
+
+console.log("...........filter method.............")
+//using filter
+
+const CanDrink = ages.filter(function(age){
+    if(age>= 21){
+        return true;
+    }
+});
+console.log(CanDrink);
+const Drink = ages.filter(age => age >= 21);
+console.log(Drink);
+
+//Filter retail company
+//Get Retail companies
+const Retails = companies.filter(company => company.category === "Retail" );
+console.log(Retails);
+
+//Get 80s companies
+
+const company80s = companies.filter(company => company.start> 1980 && company.start< 1990);
+console.log(company80s);
+
