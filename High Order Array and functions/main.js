@@ -14,6 +14,8 @@ const companies =[
 
 const ages = [33, 12, 20, 16, 5, 54, 21, 24, 44, 61, 13, 15, 45, 25, 64, 32];
 
+const height = [140,123,179,156,200,204,100,158,135,149,178,189,195,129,130];
+
 console.log("...........ForLoop.............")
 //standard for loop
 for(let i=0; i < companies.length; i++){
@@ -120,3 +122,14 @@ const ageSum1 = ages.reduce(function(total, age){
 })
 
 console.log(ageSum1);
+
+console.log("...........Combined all.............")
+//Combined all
+
+const Combined = height
+    .map(height => height*2)
+    .filter(height => height>250)
+    .sort((a,b) => a-b)
+    .reduce((a,b)=> a +b);
+
+console.log(Combined);
