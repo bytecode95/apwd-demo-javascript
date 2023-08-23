@@ -8,7 +8,7 @@
     <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body onload="windowLoad()">
+<body onload="windowLoad()" class="bg-light">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <div class="container border border-dark p-3">
         <div class="d-flex justify-content-center align-items-center">
@@ -17,7 +17,9 @@
         </div>
         <div class="row justify-content-center " >
             <div  style="width: 500px">
-                <div class=" mb-3" >
+                <lable id="added" class="p-2 bg-success mt-2 mb-2">Book added</lable><br><br>
+                <lable id="removed" class="p-2 bg-danger mt-2 mb-2">Book removed</lable>
+                <div class=" mb-3 mt-2" >
                     <label  class="form-label">Title</label>
                     <input id="title"  type="text" class="form-control"  >
                 </div>
