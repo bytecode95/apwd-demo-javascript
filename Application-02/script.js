@@ -14,6 +14,8 @@ function windowLoad(){
     }
 
     document.getElementById("content-body").innerHTML = contentRow;
+    document.getElementById("added").style.display = "none";
+
 }
 
 function onSubmit(){
@@ -21,15 +23,23 @@ function onSubmit(){
     const sAuthor = document.getElementById("author").value;
     const sISBN = document.getElementById("isbn").value;
 
-    if(sTitle && sAuthor && sISBN !== " "){
+    if(sTitle && sAuthor !== " "){
         bookList.push({Title: sTitle, Author: sAuthor, ISBN: sISBN});
-        console.log(bookList);
 
-    }else{
+
+    }else if(sTitle && sAuthor  === " "){
         alert("Please fill content..");
     }
-    clearText()
+
+
+
     windowLoad()
+    document.getElementById("added").style.display= "inline";
+    function HideLabel() {
+        document.getElementById("added").style.display = "none";
+    }
+    setTimeout(HideLabel, 2000);
+    clearText()
 }
 
 
